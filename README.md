@@ -20,6 +20,7 @@
 |**GET**|**api/v1/animals/random**|**N/A**|<code>[{"id": 5,<br>"kind": "cat",<br>"name": "Poppy",<br> "age": 9,<br> "breed": "Abyssinian"<br> }]</code>
 |**GET**|**api/v1/animals/random**|**N/A**|<code>[{"id": 5,<br>"kind": "cat",<br>"name": "Poppy",<br> "age": 9,<br> "breed": "Abyssinian"<br> }]</code>
 |**GET**|**api/v1/animals/search**|**`kind=[string]`**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> }, ...]</code>
+|**GET**|**api/v1/animals/new_faces**|**N/A**|<code>[{"id": 21,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> }, <br> {"id": 20,<br>"kind": "dog",<br>"name": "Roxy",<br> "age": 1,<br> "breed": "Appenzeller"<br> }, <br> {"id": 19,<br>"kind": "dog",<br>"name": "Oreo",<br> "age": 10,<br> "breed": "Pembroke "<br> }]</code>
 
 
 ## Known Bugs
