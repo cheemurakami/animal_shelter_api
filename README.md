@@ -8,7 +8,7 @@
   _An Api that give information about cats and dogs at a shelter._
 
 * **URL** 
-  _https://travel-api-rails.herokuapp.com/_
+  _https://afternoon-headland-99155.herokuapp.com/api/v1/animals_
 
 |  Method |  URL  | Params | Response 
 |---------------------------|---------|-------|-------
