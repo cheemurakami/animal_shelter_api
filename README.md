@@ -1,24 +1,49 @@
-# README
+# _Animal Shelter API_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _A practice application using Ruby, Gem & Pry. DATE 6/12/20_
 
-Things you may want to cover:
+#### By _**Chisato Murakami**_
 
-* Ruby version
+## Description
+  _An Api that give information about cats and dogs at a shelter._
 
-* System dependencies
+* **URL** 
+  _https://travel-api-rails.herokuapp.com/_
 
-* Configuration
+* **Method:**
 
-* Database creation
+  `GET` | `POST` | `DELETE` | `PUT` 
 
-* Database initialization
+  `id=[integer]`<br>
+  `place=[string]`<br>
+  `content=[string]`<br>
+  `author=[string]`<br>
 
-* How to run the test suite
+|  Method |  URL  | Params | Response 
+|---------------------------|---------|-------|-------
+|**GET**|**/animals**|**N/A**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> },...]</code>
+|**GET**|**/animals/:id**|**`id=[integer]`**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> }]</code>
+|**POST**|**/animals/:id**|**`kind=[string]`<br>`name=[string]`<br>`age=[integer]`<br>`breed=[string]`**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> }]</code>
+|**PUT or PATCH**|**/animals/:id**|**`kind=[string]`<br>`name=[string]`<br>`age=[integer]`<br>`breed=[string]`**|<code>{"message": "This animal has been updated successfully"}</code>
+|**DELETE**|**/animals/:id**|**`id=[integer]`**|<code>{"message": "This animal has been deleted successfully"}</code>
+|**GET**|**/animals/random**|**N/A**|<code>[{"id": 5,<br>"kind": "cat",<br>"name": "Poppy",<br> "age": 9,<br> "breed": "Abyssinian"<br> }]</code>
+|**GET**|**/animals/random**|**N/A**|<code>[{"id": 5,<br>"kind": "cat",<br>"name": "Poppy",<br> "age": 9,<br> "breed": "Abyssinian"<br> }]</code>
+|**GET**|**/animals/search**|**`kind=[string]`**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> }, ...]</code>
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Known Bugs
 
-* ...
+_No known bugs at this time_
+
+## Support and contact details
+
+_If you have any questions or any issues please feel free to submit an issue here: kiwipom1031@gmail.com_
+
+## Technologies Used
+
+_Ruby, Gem, RSpec_
+
+### Licenses
+*MIT LICENSE*
+
+Copyright (c) 2020 **Chisato Murakami**
