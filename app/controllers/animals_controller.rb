@@ -34,6 +34,7 @@ class AnimalsController < ApplicationController
 
   def random
     @animal = Animal.all.sample
+    json_response(@animal)
   end
 
   private
