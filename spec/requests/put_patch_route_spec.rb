@@ -4,7 +4,7 @@ describe "update an animal route", :type => :request do
 
   let!(:animal) { FactoryBot.create(:animal)}
   before do
-    put "/animals/#{animal.id}", params: { :age => 9 }
+    put "/api/v1/animals/#{animal.id}", params: { :age => 9 }
   end
 
   it 'returns the animal age' do
@@ -20,7 +20,7 @@ describe "update an animal route", :type => :request do
 
   let!(:animal) { FactoryBot.create(:animal)}
   before do
-    patch "/animals/#{animal.id}", params: { :age => 9 }
+    patch "/api/v1/animals/#{animal.id}", params: { :age => 9 }
   end
 
   it 'returns the animal age' do

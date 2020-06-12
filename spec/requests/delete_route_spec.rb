@@ -4,7 +4,7 @@ describe "delete an animal", :type => :request do
 
   let!(:animal) { FactoryBot.create(:animal)}
   before do
-    delete "/animals/#{animal.id}", params: { :age => 9 }
+    delete "/api/v1/animals/#{animal.id}", params: { :age => 9 }
   end
 
   it 'returns delete message' do

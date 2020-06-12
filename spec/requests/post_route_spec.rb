@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "post an animal route", :type => :request do
 
   before do
-    post '/animals', params: { :name => 'test_name', :kind => 'cat', :age => 10, :breed => 'test_breed' }
+    post '/api/v1/animals', params: { :name => 'test_name', :kind => 'cat', :age => 10, :breed => 'test_breed' }
   end
 
   it 'returns the name' do
