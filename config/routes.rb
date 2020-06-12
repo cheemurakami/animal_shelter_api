@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  get 'animals/random'
-  get 'animals/search'
-  resources :animals
-  root to: 'animals#index'
+
+  namespace :api do
+    namespace :v1 do
+      resources :animals
+    end
+  end
+
+  get 'api/v1/animals/random'
+  get 'api/v1/animals/search'
+  root to: 'api/v1/animals#index'
 end

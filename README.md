@@ -12,14 +12,14 @@
 
 |  Method |  URL  | Params | Response 
 |---------------------------|---------|-------|-------
-|**GET**|**/animals**|**N/A**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> },...]</code>
-|**GET**|**/animals/:id**|**`id=[integer]`**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> }]</code>
-|**POST**|**/animals/:id**|**`kind=[string]`<br>`name=[string]`<br>`age=[integer]`<br>`breed=[string]`**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> }]</code>
-|**PUT or PATCH**|**/animals/:id**|**`kind=[string]`<br>`name=[string]`<br>`age=[integer]`<br>`breed=[string]`**|<code>{"message": "This animal has been updated successfully"}</code>
-|**DELETE**|**/animals/:id**|**`id=[integer]`**|<code>{"message": "This animal has been deleted successfully"}</code>
-|**GET**|**/animals/random**|**N/A**|<code>[{"id": 5,<br>"kind": "cat",<br>"name": "Poppy",<br> "age": 9,<br> "breed": "Abyssinian"<br> }]</code>
-|**GET**|**/animals/random**|**N/A**|<code>[{"id": 5,<br>"kind": "cat",<br>"name": "Poppy",<br> "age": 9,<br> "breed": "Abyssinian"<br> }]</code>
-|**GET**|**/animals/search**|**`kind=[string]`**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> }, ...]</code>
+|**GET**|**api/v1/animals**|**N/A**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> },...]</code>
+|**GET**|**api/v1/animals/:id**|**`id=[integer]`**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> }]</code>
+|**POST**|**api/v1/animals/:id**|**`kind=[string]`<br>`name=[string]`<br>`age=[integer]`<br>`breed=[string]`**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> }]</code>
+|**PUT or PATCH**|**api/v1/animals/:id**|**`kind=[string]`<br>`name=[string]`<br>`age=[integer]`<br>`breed=[string]`**|<code>{"message": "This animal has been updated successfully"}</code>
+|**DELETE**|**api/v1/animals/:id**|**`id=[integer]`**|<code>{"message": "This animal has been deleted successfully"}</code>
+|**GET**|**api/v1/animals/random**|**N/A**|<code>[{"id": 5,<br>"kind": "cat",<br>"name": "Poppy",<br> "age": 9,<br> "breed": "Abyssinian"<br> }]</code>
+|**GET**|**api/v1/animals/random**|**N/A**|<code>[{"id": 5,<br>"kind": "cat",<br>"name": "Poppy",<br> "age": 9,<br> "breed": "Abyssinian"<br> }]</code>
+|**GET**|**api/v1/animals/search**|**`kind=[string]`**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> }, ...]</code>
 
 
 ## Known Bugs
