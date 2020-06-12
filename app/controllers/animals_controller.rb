@@ -32,6 +32,10 @@ class AnimalsController < ApplicationController
       }
   end
 
+  def random
+    @animal = Animal.all.sample
+  end
+
   private
   def animal_params
     params.permit(:kind, :name, :age, :breed)
