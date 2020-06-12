@@ -26,3 +26,16 @@ describe "get all animals searched", :type => :request do
     expect(response).to have_http_status(:success)
   end
 end
+
+describe "get all animals searched", :type => :request do
+  let!(:animals) { FactoryBot.create_list(:animal, 2)}
+  before { get '/api/v1/animals/random'}
+
+  it 'returns one cat' do
+    expect(JSON.parse(response.body)["kind"]).to eq("cat")
+  end
+
+  it 'returns status code 200' do
+    expect(response).to have_http_status(:success)
+  end
+end
