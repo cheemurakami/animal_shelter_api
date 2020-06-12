@@ -7,6 +7,11 @@ module Api
         json_response(@animals)
       end
 
+      def new_faces
+        @animals = Animal.new_faces
+        json_response(@animals)
+      end
+
       def show
         @animal = Animal.find(params[:id])
         json_response(@animal)

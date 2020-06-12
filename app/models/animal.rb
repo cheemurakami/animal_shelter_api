@@ -9,4 +9,7 @@ class Animal < ApplicationRecord
     # Animal.where('kind WHERE(?)', "%#{search}%")
     Animal.where(kind: search.downcase)
   end
+
+  scope :new_faces, -> {order(created_at: :desc).limit(3)}
+  
 end
