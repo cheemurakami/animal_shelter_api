@@ -40,7 +40,13 @@ class AnimalsController < ApplicationController
   def search
     kind = params[:kind]
     @animals = Animal.search(kind)
-    json_response(@animals)
+    if kind == 'dog' || kind == 'cat'
+      json_response(@animals)
+    else
+      render status: 200, json: {
+        message: "We have meows and woofs only"
+      }
+    end
   end
 
   private

@@ -6,6 +6,7 @@ class Animal < ApplicationRecord
 
   def self.search(search)
     return Animal.all unless search
-    Animal.where('kind LIKE(?)', "%#{search}%")
+    # Animal.where('kind WHERE(?)', "%#{search}%")
+    Animal.where(kind: search.downcase)
   end
 end
