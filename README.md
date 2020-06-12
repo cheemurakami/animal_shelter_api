@@ -10,15 +10,6 @@
 * **URL** 
   _https://travel-api-rails.herokuapp.com/_
 
-* **Method:**
-
-  `GET` | `POST` | `DELETE` | `PUT` 
-
-  `id=[integer]`<br>
-  `place=[string]`<br>
-  `content=[string]`<br>
-  `author=[string]`<br>
-
 |  Method |  URL  | Params | Response 
 |---------------------------|---------|-------|-------
 |**GET**|**/animals**|**N/A**|<code>[{"id": 1,<br>"kind": "cat",<br>"name": "kiwi",<br> "age": 9,<br> "breed": "american domestic shorthair"<br> },...]</code>
