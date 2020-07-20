@@ -3,7 +3,7 @@ module Api
     class AnimalsController < ApplicationController
 
       def index
-        @animals = Animal.page(params[:page]).per(100)
+        @animals = Animal.page(params[:page]).per(10)
         json_response(@animals)
       end
 
