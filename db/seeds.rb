@@ -18,7 +18,8 @@ class Seed
         kind: "cat",
         name: Faker::Creature::Cat.name,
         age: Faker::Number.between(from: 1, to: 10),
-        breed: Faker::Creature::Cat.breed
+        breed: Faker::Creature::Cat.breed,
+        imgUrl: ""
       )
       puts "animal #{i}, kind:cat:\r\n Name: #{animal.name}\r\n Age: #{animal.age}\r\n Breed: #{animal.age}"
     end
@@ -27,7 +28,8 @@ class Seed
         kind: "dog",
         name: Faker::Creature::Dog.name,
         age: Faker::Number.between(from: 1, to: 10),
-        breed: Faker::Creature::Dog.breed
+        breed: Faker::Creature::Dog.breed,
+        imgUrl: ""
       )
       puts "animal #{i}, kind:dog:\r\n Name: #{animal.name}\r\n Age: #{animal.age}\r\n Breed: #{animal.age}"
     end
