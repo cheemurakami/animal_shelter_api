@@ -21,7 +21,7 @@ class Seed
         breed: Faker::Creature::Cat.breed,
         imgUrl: ""
       )
-      puts "animal #{i}, kind:cat:\r\n Name: #{animal.name}\r\n Age: #{animal.age}\r\n Breed: #{animal.age}"
+      puts "animal #{i}, kind:cat:\r\n Name: #{animal.name}\r\n Age: #{animal.age}\r\n Breed: #{animal.age} \r\n imgUrl: #{animal.imgUrl}"
     end
     10.times do |i|
       animal = Animal.create!(
