@@ -13,16 +13,23 @@ class Seed
   end
 
   def generate_animals
-    10.times do |i|
+    breed_body = HTTParty.get("https://api.thecatapi.com/v1/breeds/").body
+    breeds = JSON.parse(breed_body)
+
+    breeds.shuffle.first(10).each_with_index do |breed, i|
+      img_body = HTTParty.get("https://api.thecatapi.com/v1/images/search?breed_ids=#{breed["id"]}").body
+      imgs = JSON.parse(img_body)
+
       animal = Animal.create!(
         kind: "cat",
         name: Faker::Creature::Cat.name,
         age: Faker::Number.between(from: 1, to: 10),
-        breed: Faker::Creature::Cat.breed,
-        imgUrl: ""
+        breed: breed["name"],
+        imgUrl: imgs.first["url"]
       )
       puts "animal #{i}, kind:cat:\r\n Name: #{animal.name}\r\n Age: #{animal.age}\r\n Breed: #{animal.age} \r\n imgUrl: #{animal.imgUrl}"
     end
+
     10.times do |i|
       animal = Animal.create!(
         kind: "dog",
