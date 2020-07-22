@@ -18,12 +18,8 @@ module Api
       end
 
       def create
-        @animal = Animal.create(animal_params)
-        if @animal.valid?
-          json_response(@animal, :created)
-        else
-          json_response({errors: @animal.errors.full_messages}, 422)
-        end
+        @animal = Animal.create!(animal_params)
+        json_response(@animal, :created)
       end
       
       def update
