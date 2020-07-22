@@ -25,7 +25,7 @@ module Api
           json_response({errors: @animal.errors.full_messages}, 422)
         end
       end
-
+      
       def update
         @animal = Animal.find(params[:id])
         if @animal.update!(animal_params)
